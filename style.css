@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    background: #f2f2f2;
+    font-family: 'Quicksand', sans-serif;
+    width: 100vw;
+    max-width: 100%;
+}
+
+/* Landing description */
+.description-section {
+    width: 70%;
+    padding: 2rem 0;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 5rem;
+}
+.description-section h2 {
+    color: #3A3FF3;
+    font-size: 2rem;
+    padding: 3rem 0;
+    text-align: center;
+}
+.info-container p {
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+
+
+.card-container {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    gap: 2rem;
+    text-align: center;
+}
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    width: 30%;
+    background: white;
+    border-radius: 1rem;
+    padding: 2rem 0.5rem;
+    border-left: 2px solid rgb(105, 103, 103);
+    border-right: 2px solid rgb(105, 103, 103);
+    color: #3A3FF3;
+    font-weight: 600;
+}
+
+.card i {
+    color: #F60D0D;
+    font-size: 5rem;
+}
+
+.mini-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    width: 23%;
+    background: white;
+    border-radius: 1rem;
+    padding: 2rem 0.5rem;
+    color: #3A3FF3;
+    font-weight: 600;
+}
+.mini-card i {
+    color: #F60D0D;
+    font-size: 5rem;
+    border-radius: 50%;
+    padding: 2rem;
+    background: #BEBFEB;
+}
+
+@media (max-width:500px) {
+    .card-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .card, .mini-card {
+        width: 80%;
+        align-items: center;
+    }
+    .info-container p {
+        font-size: 1rem;
+        font-weight: 600;
+    }
+}
